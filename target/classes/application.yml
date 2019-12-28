@@ -1,0 +1,24 @@
+spring:
+  datasource:
+   # drivername: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/phataphat_common?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+  application:
+    name: phataphat-common
+  jpa:
+    properties:      hibernate:
+        format_sql: true
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    
+server:
+  port: 8081
+    
+  
+   
